@@ -16,7 +16,7 @@ sleep 1
 processid=`pidof ksnapshot`
 timestamp=`date +%d%H%M%b%y`; 
 dcop ksnapshot-${processid} interface slotGrab
-dcop ksnapshot-${processid} interface save /home/dnonco1/Desktop/snapshots/${timestamp}
+dcop ksnapshot-${processid} interface save /home/user/Desktop/snapshots/${timestamp}
 kill ${processid}
 #END
 
@@ -24,4 +24,4 @@ kill ${processid}
 #ddhhmmMonYY, #eg: 221055Feb11 indicates snapshot of 1055h on 22 Feb 2011
 #dcop ksnapshot-${processid} interface setTime 1 
 #dcop ksnapshot-${processid} interface slotSave
-#echo "dcop ksnapshot-${processid} interface save /home/dnonco1/Desktop/snapshots/${timestamp}"
+#echo "dcop ksnapshot-${processid} interface save /home/user/Desktop/snapshots/${timestamp}"
