@@ -7,8 +7,8 @@
 #The cron entry for this should be as follows (The first line is for every 30 minutes,
 #the second line is for every minute. Get the hint?
 
-#30 * * * * export DISPLAY=:0 && /home/dnonco1/autosnapshot.sh
-#* * * * * export DISPLAY=:0 && /home/dnonco1/autosnapshot.sh
+#30 * * * * export DISPLAY=:0 && /home/user/autosnapshot.sh
+#* * * * * export DISPLAY=:0 && /home/user/autosnapshot.sh
 
 #BEGIN
 ksnapshot&
